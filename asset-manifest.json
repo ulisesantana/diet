@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.42cc8b22.chunk.css",
-    "main.js": "/repository-name/static/js/main.99970b79.chunk.js",
-    "main.js.map": "/repository-name/static/js/main.99970b79.chunk.js.map",
-    "runtime~main.js": "/repository-name/static/js/runtime~main.f7634681.js",
-    "runtime~main.js.map": "/repository-name/static/js/runtime~main.f7634681.js.map",
-    "static/js/2.8325ac22.chunk.js": "/repository-name/static/js/2.8325ac22.chunk.js",
-    "static/js/2.8325ac22.chunk.js.map": "/repository-name/static/js/2.8325ac22.chunk.js.map",
-    "index.html": "/repository-name/index.html",
-    "precache-manifest.71a48b0c839227fc2e8ec16dd5cfb333.js": "/repository-name/precache-manifest.71a48b0c839227fc2e8ec16dd5cfb333.js",
-    "service-worker.js": "/repository-name/service-worker.js",
-    "static/css/main.42cc8b22.chunk.css.map": "/repository-name/static/css/main.42cc8b22.chunk.css.map"
+    "main.css": "/diet/static/css/main.42cc8b22.chunk.css",
+    "main.js": "/diet/static/js/main.fcf1374d.chunk.js",
+    "main.js.map": "/diet/static/js/main.fcf1374d.chunk.js.map",
+    "runtime~main.js": "/diet/static/js/runtime~main.ced63f65.js",
+    "runtime~main.js.map": "/diet/static/js/runtime~main.ced63f65.js.map",
+    "static/js/2.8325ac22.chunk.js": "/diet/static/js/2.8325ac22.chunk.js",
+    "static/js/2.8325ac22.chunk.js.map": "/diet/static/js/2.8325ac22.chunk.js.map",
+    "index.html": "/diet/index.html",
+    "precache-manifest.514212a76161db5910584680d36fb9cb.js": "/diet/precache-manifest.514212a76161db5910584680d36fb9cb.js",
+    "service-worker.js": "/diet/service-worker.js",
+    "static/css/main.42cc8b22.chunk.css.map": "/diet/static/css/main.42cc8b22.chunk.css.map"
   }
 }
