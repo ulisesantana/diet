@@ -1,0 +1,48 @@
+{
+  "name": "diet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@types/jest": "24.0.12",
+    "@types/node": "12.0.0",
+    "@types/react": "16.8.15",
+    "@types/react-dom": "16.8.4",
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.0",
+    "styled-components": "^4.2.0",
+    "styled-icons": "^7.11.0",
+    "typescript": "3.4.5",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^4.1.14",
+    "@types/uuid": "^3.4.4"
+  },
+  "homepage": "https://ulisesantnaa.github.io/repository-name"
+}
