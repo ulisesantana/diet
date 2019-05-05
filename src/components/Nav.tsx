@@ -11,6 +11,7 @@ export interface NavProps {
 const styles = (theme: Theme) => ({
   root: {
     color: 'white',
+    height: '60px'
   },
   flexContainer: {
     backgroundColor: theme.palette.primary.main
