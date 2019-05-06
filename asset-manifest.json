@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/diet/static/css/main.42cc8b22.chunk.css",
-    "main.js": "/diet/static/js/main.fcf1374d.chunk.js",
-    "main.js.map": "/diet/static/js/main.fcf1374d.chunk.js.map",
+    "main.js": "/diet/static/js/main.1a44dcbc.chunk.js",
+    "main.js.map": "/diet/static/js/main.1a44dcbc.chunk.js.map",
     "runtime~main.js": "/diet/static/js/runtime~main.ced63f65.js",
     "runtime~main.js.map": "/diet/static/js/runtime~main.ced63f65.js.map",
-    "static/js/2.8325ac22.chunk.js": "/diet/static/js/2.8325ac22.chunk.js",
-    "static/js/2.8325ac22.chunk.js.map": "/diet/static/js/2.8325ac22.chunk.js.map",
+    "static/js/2.0cd88f76.chunk.js": "/diet/static/js/2.0cd88f76.chunk.js",
+    "static/js/2.0cd88f76.chunk.js.map": "/diet/static/js/2.0cd88f76.chunk.js.map",
     "index.html": "/diet/index.html",
-    "precache-manifest.514212a76161db5910584680d36fb9cb.js": "/diet/precache-manifest.514212a76161db5910584680d36fb9cb.js",
+    "precache-manifest.953faa72c8f7fceb0d2e6610f4000083.js": "/diet/precache-manifest.953faa72c8f7fceb0d2e6610f4000083.js",
     "service-worker.js": "/diet/service-worker.js",
-    "static/css/main.42cc8b22.chunk.css.map": "/diet/static/css/main.42cc8b22.chunk.css.map"
+    "static/css/main.42cc8b22.chunk.css.map": "/diet/static/css/main.42cc8b22.chunk.css.map",
+    "static/media/drinks.jpg": "/diet/static/media/drinks.d3d32049.jpg",
+    "static/media/embutidos.jpg": "/diet/static/media/embutidos.8c6ceb2f.jpg",
+    "static/media/meat.jpg": "/diet/static/media/meat.c30f172d.jpg",
+    "static/media/oil-fat.jpg": "/diet/static/media/oil-fat.c2e6f132.jpg",
+    "static/media/sea.jpg": "/diet/static/media/sea.0643368e.jpg"
   }
 }
