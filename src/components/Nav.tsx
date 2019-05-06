@@ -3,7 +3,7 @@ import React, {ChangeEvent} from "react";
 import {isMobile} from "../utils";
 
 export interface NavProps {
-  classes: Record<"stickToBottom" | "root" | "flexContainer", string>,
+  classes: Record<"stickToBottom" | "root" | "indicator" | "flexContainer", string>,
   onChange: (e: ChangeEvent<{}>, index: number) => void
   value: number,
 }
@@ -12,6 +12,9 @@ const styles = (theme: Theme) => ({
   root: {
     color: 'white',
     height: '60px'
+  },
+  indicator: {
+    top: "0"
   },
   flexContainer: {
     backgroundColor: theme.palette.primary.main
@@ -33,9 +36,9 @@ export const Nav = withStyles(styles)(({value, onChange, classes}: NavProps) => 
       value={value}
       variant="fullWidth"
     >
-      <Tab className={classes.root} label="Diariamente"/>
-      <Tab className={classes.root} label="Semanalmente"/>
-      <Tab className={classes.root} label="Nunca"/>
+      <Tab className={`${classes.root} ${classes.indicator}`} label="Diariamente"/>
+      <Tab className={`${classes.root} ${classes.indicator}`} label="Semanalmente"/>
+      <Tab className={`${classes.root} ${classes.indicator}`} label="Nunca"/>
     </Tabs>
   )
 );

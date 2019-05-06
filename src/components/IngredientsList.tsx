@@ -12,11 +12,12 @@ interface IItemList {
 const styles = {
   card: {
     margin: '8px',
-    maxWidth: 300,
+    maxHeight: 375,
+    width: 300,
   },
   media: {
     objectFit: 'cover' as "scale-down",
-    maxHeight: 100
+    maxHeight: 125
   },
 };
 
@@ -35,7 +36,7 @@ export const IngredientsList = withStyles(styles)(({category, classes, ingredien
               {category}
             </Typography>
             <Typography component="p">
-              {ingredients.map(i => i.label + ', ')}
+              {ingredients.map(i => i.label).join(', ').concat('.')}
             </Typography>
           </CardContent>
         </CardActionArea>

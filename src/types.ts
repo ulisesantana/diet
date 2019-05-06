@@ -18,7 +18,8 @@ export enum CategoryID {
 
 export interface ICategory {
   id: CategoryID,
-  label: string
+  label: string,
+  image: string
 }
 
 export interface IIngredient {

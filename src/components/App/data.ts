@@ -1,16 +1,22 @@
 import { Category, Ingredient } from "../../entities";
 import { CategoryID, Frequency, Ingredients } from "../../types";
 
+import bebidasPicture from '../../assets/drinks.jpg';
+import carnesPicture from '../../assets/meat.jpg';
+import aceitesPicture from '../../assets/oil-fat.jpg';
+import embutidosPicture from '../../assets/embutidos.jpg';
+import delMarPicture from '../../assets/sea.jpg';
+
 export const categories: Category[] = [
-  new Category(CategoryID.AceitesYGrasasSolidas, "Aceites y grasas sólidas"),
-  new Category(CategoryID.Bebidas, "Bebidas"),
-  new Category(CategoryID.Carnes, "Carnes"),
-  new Category(CategoryID.Embutidos, "Embutidos"),
-  new Category(CategoryID.DelMar, "Del mar"),
-  new Category(CategoryID.DeLaTierra, "Del la tierra"),
-  new Category(CategoryID.Lacteos, "Lácteos"),
-  new Category(CategoryID.Dulces, "Dulces"),
-  new Category(CategoryID.FrutosSecos, "Frutos Secos")
+  new Category(CategoryID.AceitesYGrasasSolidas, "Aceites y grasas sólidas", aceitesPicture),
+  new Category(CategoryID.Bebidas, "Bebidas", bebidasPicture),
+  new Category(CategoryID.Carnes, "Carnes", carnesPicture),
+  new Category(CategoryID.Embutidos, "Embutidos", embutidosPicture),
+  new Category(CategoryID.DelMar, "Del mar", delMarPicture),
+  new Category(CategoryID.DeLaTierra, "Del la tierra", "https://placekitten.com/250/75"),
+  new Category(CategoryID.Lacteos, "Lácteos", "https://placekitten.com/250/75"),
+  new Category(CategoryID.Dulces, "Dulces", "https://placekitten.com/250/75"),
+  new Category(CategoryID.FrutosSecos, "Frutos Secos", "https://placekitten.com/250/75")
 ];
 
 export const ingredients: Ingredients = [
@@ -47,5 +53,14 @@ export const ingredients: Ingredients = [
   new Ingredient("Cangrejo", Frequency.never, CategoryID.DelMar),
   new Ingredient("Marisco", Frequency.never, CategoryID.DelMar),
 
-  new Ingredient("Marisco", Frequency.daily, CategoryID.AceitesYGrasasSolidas)
+  new Ingredient("Aceite de oliva (preferentemente)", Frequency.daily, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Aceite de semillas", Frequency.daily, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Aceite de girasol", Frequency.daily, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Aceite de maíz", Frequency.daily, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Manteca de cerdo", Frequency.never, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Sebo", Frequency.never, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Tocino", Frequency.never, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Nata", Frequency.never, CategoryID.AceitesYGrasasSolidas),
+
+  new Ingredient("Nata", Frequency.never, CategoryID.AceitesYGrasasSolidas),
 ].reduce((acc, ing: Ingredient) => ({ ...acc, [ing.id]: ing }), {});
