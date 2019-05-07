@@ -41,6 +41,6 @@ export const IngredientsList = withStyles(styles)(({category, classes, ingredien
           </CardContent>
         </CardActionArea>
       </Card>)
-      : <div><br/></div>;
+      : <div></div>;
   }
 );

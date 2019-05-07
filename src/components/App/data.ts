@@ -6,6 +6,10 @@ import carnesPicture from '../../assets/meat.jpg';
 import aceitesPicture from '../../assets/oil-fat.jpg';
 import embutidosPicture from '../../assets/embutidos.jpg';
 import delMarPicture from '../../assets/sea.jpg';
+import deLaTierraPicture from '../../assets/verduras.jpg';
+import lacteosPicture from '../../assets/lacteos.jpg';
+import dulcesPicture from '../../assets/dulces.jpg';
+import frutosSecosPicture from '../../assets/frutos-secos.jpg';
 
 export const categories: Category[] = [
   new Category(CategoryID.AceitesYGrasasSolidas, "Aceites y grasas sólidas", aceitesPicture),
@@ -13,10 +17,10 @@ export const categories: Category[] = [
   new Category(CategoryID.Carnes, "Carnes", carnesPicture),
   new Category(CategoryID.Embutidos, "Embutidos", embutidosPicture),
   new Category(CategoryID.DelMar, "Del mar", delMarPicture),
-  new Category(CategoryID.DeLaTierra, "Del la tierra", "https://placekitten.com/250/75"),
-  new Category(CategoryID.Lacteos, "Lácteos", "https://placekitten.com/250/75"),
-  new Category(CategoryID.Dulces, "Dulces", "https://placekitten.com/250/75"),
-  new Category(CategoryID.FrutosSecos, "Frutos Secos", "https://placekitten.com/250/75")
+  new Category(CategoryID.DeLaTierra, "Del la tierra", deLaTierraPicture),
+  new Category(CategoryID.Lacteos, "Lácteos", lacteosPicture),
+  new Category(CategoryID.Dulces, "Dulces", dulcesPicture),
+  new Category(CategoryID.FrutosSecos, "Frutos Secos", frutosSecosPicture)
 ];
 
 export const ingredients: Ingredients = [
@@ -62,5 +66,56 @@ export const ingredients: Ingredients = [
   new Ingredient("Tocino", Frequency.never, CategoryID.AceitesYGrasasSolidas),
   new Ingredient("Nata", Frequency.never, CategoryID.AceitesYGrasasSolidas),
 
-  new Ingredient("Nata", Frequency.never, CategoryID.AceitesYGrasasSolidas),
+  new Ingredient("Todo tipo de verduras excepto las que se mencionan en otras secciones", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Todo tipo de especias", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Harina", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Arroz", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Sémola", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Pasta", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Germen de trigo", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Salvado de trigo", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Papas", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Pan", Frequency.daily, CategoryID.DeLaTierra),
+  new Ingredient("Espárragos", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Champiñones", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Setas", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Puerros", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Rábanos", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Espinacas", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Coliflor", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Guisantes", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Habas", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Tomates", Frequency.weekly, CategoryID.DeLaTierra),
+  new Ingredient("Legumbres", Frequency.weekly, CategoryID.DeLaTierra),
+
+  new Ingredient("Leche desnatada", Frequency.daily, CategoryID.Lacteos),
+  new Ingredient("Yogur", Frequency.daily, CategoryID.Lacteos),
+  new Ingredient("Quesos no grasos", Frequency.daily, CategoryID.Lacteos),
+  new Ingredient("Leche Entera", Frequency.weekly, CategoryID.Lacteos),
+  new Ingredient("Natillas", Frequency.weekly, CategoryID.Lacteos),
+  new Ingredient("Cuajada", Frequency.weekly, CategoryID.Lacteos),
+  new Ingredient("Quesos grasos", Frequency.never, CategoryID.Lacteos),
+
+  new Ingredient("Galletas integrales", Frequency.daily, CategoryID.Dulces),
+  new Ingredient("Tartas", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Hojaldres", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Pastelería Industrial", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Azúcar refinado", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Miel", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Fructosa", Frequency.weekly, CategoryID.Dulces),
+  new Ingredient("Chocolate", Frequency.weekly, CategoryID.Dulces),
+
+  new Ingredient("Todo tipo de fruto seco crudo, excepto cacahuete", Frequency.daily, CategoryID.FrutosSecos),
+  new Ingredient("Cacahuete", Frequency.weekly, CategoryID.FrutosSecos),
+  new Ingredient("Frutos secos fritos", Frequency.weekly, CategoryID.FrutosSecos),
+
+  new Ingredient("Té", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Café", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Infusiones", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Zumos naturales", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Agua mineral", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Agua mineral con gas", Frequency.daily, CategoryID.Bebidas),
+  new Ingredient("Alcohol", Frequency.never, CategoryID.Bebidas),
+
+
 ].reduce((acc, ing: Ingredient) => ({ ...acc, [ing.id]: ing }), {});
