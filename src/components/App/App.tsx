@@ -1,5 +1,5 @@
 import React, {ChangeEvent, useState} from "react";
-import {Grid, withStyles} from "@material-ui/core";
+import {Grid, Theme, withStyles} from "@material-ui/core";
 import {Nav} from "../Nav";
 import {ingredients, categories} from "./data";
 import {IngredientsList} from "../IngredientsList";
@@ -27,11 +27,12 @@ function swipeHandler(direction: string, section: number, setSection: Function){
   }
 }
 
-const style = {
+const style = (theme: Theme) => ({
   root: {
-    padding: '16px 0 76px 0'
+    backgroundColor: theme.palette.primary.light,
+    padding: isMobile() ? '16px 0 76px 0' : '32px'
   }
-};
+});
 
 export const App = withStyles(style)(({classes}: {classes: Record<'root', string>}) => {
   const [section, setSection] = useState(0);
@@ -50,10 +51,10 @@ export const App = withStyles(style)(({classes}: {classes: Record<'root', string
           onSwipeRight={onSwipeRight}>
         <Grid
           container
-          className={isMobile() ? classes.root : ''}
+          className={classes.root}
           direction={isMobile() ? "column" : "row"}
-          justify={isMobile() ? "space-between" : "flex-start"}
-          alignItems={isMobile() ? "center" : "flex-start"}
+          justify={isMobile() ? "space-between" : "space-around"}
+          alignItems={"center"}
           spacing={8}
         >
           {section === 0 &&
