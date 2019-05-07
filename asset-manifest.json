@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/diet/static/css/main.42cc8b22.chunk.css",
-    "main.js": "/diet/static/js/main.1a44dcbc.chunk.js",
-    "main.js.map": "/diet/static/js/main.1a44dcbc.chunk.js.map",
+    "main.js": "/diet/static/js/main.1cb7b42b.chunk.js",
+    "main.js.map": "/diet/static/js/main.1cb7b42b.chunk.js.map",
     "runtime~main.js": "/diet/static/js/runtime~main.ced63f65.js",
     "runtime~main.js.map": "/diet/static/js/runtime~main.ced63f65.js.map",
-    "static/js/2.0cd88f76.chunk.js": "/diet/static/js/2.0cd88f76.chunk.js",
-    "static/js/2.0cd88f76.chunk.js.map": "/diet/static/js/2.0cd88f76.chunk.js.map",
+    "static/js/2.d25a675d.chunk.js": "/diet/static/js/2.d25a675d.chunk.js",
+    "static/js/2.d25a675d.chunk.js.map": "/diet/static/js/2.d25a675d.chunk.js.map",
     "index.html": "/diet/index.html",
-    "precache-manifest.953faa72c8f7fceb0d2e6610f4000083.js": "/diet/precache-manifest.953faa72c8f7fceb0d2e6610f4000083.js",
+    "precache-manifest.926b0c67faf0378c2fbd10d162b20739.js": "/diet/precache-manifest.926b0c67faf0378c2fbd10d162b20739.js",
     "service-worker.js": "/diet/service-worker.js",
     "static/css/main.42cc8b22.chunk.css.map": "/diet/static/css/main.42cc8b22.chunk.css.map",
-    "static/media/drinks.jpg": "/diet/static/media/drinks.d3d32049.jpg",
-    "static/media/embutidos.jpg": "/diet/static/media/embutidos.8c6ceb2f.jpg",
-    "static/media/meat.jpg": "/diet/static/media/meat.c30f172d.jpg",
-    "static/media/oil-fat.jpg": "/diet/static/media/oil-fat.c2e6f132.jpg",
-    "static/media/sea.jpg": "/diet/static/media/sea.0643368e.jpg"
+    "static/media/drinks.jpg": "/diet/static/media/drinks.de62427c.jpg",
+    "static/media/dulces.jpg": "/diet/static/media/dulces.81cc6282.jpg",
+    "static/media/embutidos.jpg": "/diet/static/media/embutidos.eb5c6ca5.jpg",
+    "static/media/frutos-secos.jpg": "/diet/static/media/frutos-secos.4c9864b1.jpg",
+    "static/media/lacteos.jpg": "/diet/static/media/lacteos.87d42a4b.jpg",
+    "static/media/meat.jpg": "/diet/static/media/meat.5c276377.jpg",
+    "static/media/oil-fat.jpg": "/diet/static/media/oil-fat.1b72105d.jpg",
+    "static/media/sea.jpg": "/diet/static/media/sea.fd090630.jpg",
+    "static/media/verduras.jpg": "/diet/static/media/verduras.b2dacee4.jpg"
   }
 }
