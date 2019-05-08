@@ -33,7 +33,7 @@ export const IngredientsList = withStyles(styles)(({category, classes, ingredien
             component="img"
             className={classes.media}
             image={img}
-            title="Contemplative Reptile"
+            title={category}
           />
           <CardContent className={`${classes.root}`}>
             <Typography gutterBottom variant="h5" component="h2">
@@ -45,6 +45,6 @@ export const IngredientsList = withStyles(styles)(({category, classes, ingredien
           </CardContent>
         </CardActionArea>
       </Card>)
-      : <div></div>;
+      : <></>;
   }
 );

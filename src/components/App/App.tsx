@@ -18,7 +18,6 @@ const getIngredientsByCategoryAndFrequency = (
 const swipe = defineSwipe({swipeDistance: 20});
 function swipeHandler(direction: string, section: number, setSection: Function){
   return () => {
-    console.log('Swiping to ', direction);
     if (direction === 'right') {
       section > 0 && setSection(section - 1);
     } else {
